@@ -1,0 +1,36 @@
+1.
+If we change all the parameters by the same value, they will keep being the same. 
+In such a case, each neuron will be doing the same thing, they will be redundant 
+and there would be no point in having multiple neurons.
+2.
+It is possible and common to initialize the biases to be zero,
+ since the asymmetry breaking is provided by the small random numbers in the weights.
+3.
+The ReLU function is another non-linear activation function that has gained popularity in the deep learning domain. 
+ReLU stands for Rectified Linear Unit. The main advantage of using the ReLU function over other activation functions 
+is that it does not activate all the neurons at the same time.
+4.
+Generally , we use ReLU in hidden layer to avoid vanishing gradient problem and better computation performance , 
+and Softmax function use in last output layer .
+...
+Tanh or Hyperbolic tangent: Tanh help to solve non zero centered problem of sigmoid function. ...
+ReLU (Rectified Linear Unit)
+Leaky ReLU. 
+Softmax.
+5.
+What is the effect of the momentum in a learning method?
+When the gradient keeps pointing in the same direction, this will increase the size of the steps taken 
+towards the minimum. It is otherefore often necessary to reduce the global learning rate µ 
+when using a lot of momentum (m close to 1).
+Momentum.
+momentum	Training time
+0.9	            95
+6.
+ Models where only a small fraction of parameters are non-zero – arise frequently in machine learning.
+For example, sparse vectors and matrix have most of zeros and only a few number of non-zero valued elements.
+7.
+Yes, dropout does slow down training, in general roughly by a factor of two. 
+However, it has no impact on inference speed since it is only turned on during training.
+ MC Dropout is exactly like dropout during training, but it is still active during inference,
+ so each inference is slowed down slightly.
+8.
